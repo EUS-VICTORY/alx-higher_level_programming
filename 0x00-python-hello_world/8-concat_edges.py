@@ -4,4 +4,3 @@ str = ("Python is an interpreted, interactive, object-oriented programming"
 str = str[39:66]
 str = str[39:-62] + str[107:-17]+ str[:6]
 print(str)
-        
