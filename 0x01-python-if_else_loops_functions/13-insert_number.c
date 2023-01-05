@@ -1,5 +1,6 @@
 #include "lists.h"
-#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * insert_node - function in C that inserts a number 
