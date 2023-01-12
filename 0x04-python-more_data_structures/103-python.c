@@ -1,9 +1,9 @@
-#include <python.h>
+#include <Python.h>
 #include <object.h>
 #include <listobject.h>
 #include <bytesobject.h>
 
-void print_python_bytes(PyObject *p)
+void print_python_bytesi(PyObject *p)
 {
 	long int size;
 	int i;
