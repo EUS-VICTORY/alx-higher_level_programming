@@ -11,29 +11,32 @@ void print_python_list(PyObject *p)
 
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p)
-			{
-			printf("  [Error] Invalid Bytes Object\n");
-			return;
-			}
-			PyBytes_AsStringAndSize(p, &trying_str, &size);
-			printf(" size: %li\n", size)
-			printf(" trying_str %s\n", trying_str);
-			if size < 10
-			printf(" first %li bytes", size + 1);
-			else
-			printf(" first 10 bytes:");
-			for (i = 0, i <= size && i < 10, i++)
-			printf(" %02hhx", tyirng_str[i]);
-			printf("\n")
+{
+	printf("  [Error] Invalid Bytes Object\n");
+	return;
+	}
+
+	PyBytes_AsStringAndSize(p, &trying_str, &size);
+
+	printf(" size: %li\n", size);
+	printf(" trying_str %s\n", trying_str);
+	if size < 10
+		printf(" first %li bytes", size + 1);
+	else
+		printf(" first 10 bytes:");
+	for (i = 0, i <= size && i < 10, i++)
+		printf(" %02hhx", tyirng_str[i]);
+	printf("\n")
 }
+
 void print_python_bytes(PyObject *p)
 {
 long int size = Pylist_size(p);
-int i
+int i;
 Pylist_object *list = (PylistObject *)p;
 const char *type;
 
-printf("[*] Python list info\n")
+printf("[*] Python list info\n");
 printf("[*] Size of the python list = %li\n", size);
 printf("[*] Allocated = %li\n", list->allocated);
 
