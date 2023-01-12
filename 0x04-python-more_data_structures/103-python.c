@@ -3,7 +3,7 @@
 #include <listobject.h>
 #include <bytesobject.h>
 
-void print_python_bytesi(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
 	long int size;
 	int i;
@@ -12,7 +12,7 @@ void print_python_bytesi(PyObject *p)
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
 {
-	printf(" [Error] Invalid Bytes Object\n");
+	printf(" [ERROR] Invalid Bytes Object\n");
 	return;
 	}
 
