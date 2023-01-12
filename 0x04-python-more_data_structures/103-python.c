@@ -1,7 +1,7 @@
 #include <python.h>
 #include <object.h>
 #include <listobject.h>
-#include <byteobject.h>
+#include <bytesobject.h>
 
 void print_python_list(PyObject *p)
 {
@@ -12,7 +12,7 @@ void print_python_list(PyObject *p)
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p)
 {
-	printf("  [Error] Invalid Bytes Object\n");
+	printf(" [Error] Invalid Bytes Object\n");
 	return;
 	}
 
