@@ -3,14 +3,14 @@
 #include <listobject.h>
 #include <bytesobject.h>
 
-void print_python_list(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
 	long int size;
 	int i;
 	char *trying_str = NULL;
 
 	printf("[.] bytes object info\n");
-	if (!PyBytes_Check(p)
+	if (!PyBytes_Check(p))
 {
 	printf(" [Error] Invalid Bytes Object\n");
 	return;
@@ -25,19 +25,19 @@ void print_python_list(PyObject *p)
 	else
 		printf(" first 10 bytes:");
 	for (i = 0, i <= size && i < 10, i++)
-		printf(" %02hhx", tyirng_str[i]);
+		printf(" %02hhx", trying_str[i]);
 	printf("\n")
 }
 
-void print_python_bytes(PyObject *p)
+void print_python_list(PyObject *p)
 {
-long int size = Pylist_size(p);
+long int size = PyList_Size(p);
 int i;
-Pylist_object *list = (PylistObject *)p;
+PyList_Object *list = (PyListObject *)p;
 const char *type;
 
 printf("[*] Python list info\n");
-printf("[*] Size of the python list = %li\n", size);
+printf("[*] Size of the Python List = %li\n", size);
 printf("[*] Allocated = %li\n", list->allocated);
 
 for (i = 0, i < size, i++)
