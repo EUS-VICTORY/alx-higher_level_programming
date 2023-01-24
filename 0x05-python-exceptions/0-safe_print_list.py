@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
 
     Args:
     my_list(list):the list  to print element from
-    x:the number of element of my_list to print
+    x(int):the number of element of my_list to print
     Returns: 
     the number of elements printed
     """
