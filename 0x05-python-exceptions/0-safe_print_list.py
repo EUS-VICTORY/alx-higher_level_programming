@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    """print the element of x
+    """Print x element of a list
 
     Args:
     my_list(list):the list  to print element from
@@ -11,10 +11,10 @@ def safe_print_list(my_list=[], x=0):
     count = 0
     for i in range(x):
         try:
-            print("{} ".format(my_list[i]), end="")
+            print("{}".format(my_list[i]), end="")
             count += 1
         except IndexError:
             break
-    print()
+    print("")
     return count
 
