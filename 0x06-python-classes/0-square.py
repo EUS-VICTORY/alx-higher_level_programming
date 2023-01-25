@@ -2,4 +2,6 @@
 """Define a class Square"""
 
 Class Square:
-    pass #An empty block
+    """Define an empty class named Square"""
+    pass
+
