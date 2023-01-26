@@ -18,15 +18,14 @@ class Square:
             
             raise TypeError("size must be an integer")
         
-        elif size < 0
+        elif size < 0:
+            """raise an error"""
         
-        """raise an error"""
-        
-        raise ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0")
     
-else:
+        else:
     
-    """initialise _size of self with size"""
+            """initialise _size of self with size"""
     
-    self._size = size
+            self._size = size
     

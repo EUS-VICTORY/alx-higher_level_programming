@@ -5,5 +5,5 @@
 class Square:
     """defines a function called _init_"""
     def _init_(self, size):
-    """initialises size of self with size"""
-    self._size = size
+        """initialises size of self with size"""
+        self._size = size
