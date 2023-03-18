@@ -1,5 +1,5 @@
---Lists all records with a score >= 10, in the table second_table
---Records are ordered by descendibg score.
+-- Lists all records with a score >= 10, in the table second_table
+-- Records are ordered by descendibg score.
 SELECT `score`, `name`
 FROM `second_table`
 WHERE `score` >= 10
