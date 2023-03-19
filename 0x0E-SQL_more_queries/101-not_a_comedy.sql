@@ -7,6 +7,6 @@ WHERE title NOT IN
 FROM tv_shows
 LEFT JOIN tv_show_genres ON tv_shows.id = tv_shows_genres.show_id
 LEFT JOIN tv_genres ON tv_shows_genres.genre_id = tv_genres.show_id
-WHERE tv_genres.name = "Comedy')
+WHERE tv_genres.name = 'Comedy')
 GROUP BY title
 ORDER BY title ASC;
